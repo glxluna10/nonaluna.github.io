@@ -731,7 +731,7 @@ body {
   z-index: 2;
 }
 
-/* TIMELINE */
+/* TIMELINE (rebuilt: clean centered alternating) */
 .timeline-bg {
   background: #f5ede0;
   padding: 60px 20px 70px;
@@ -749,39 +749,63 @@ body {
 
 .tl-wrap {
   position: relative;
-  max-width: 600px;
+  max-width: 760px;
   margin: 0 auto;
+  padding: 6px 0;
 }
 
 .tl-center-line {
   position: absolute;
   left: 50%;
   top: 0;
-  bottom: 60px;
-  width: 1.5px;
-  background: linear-gradient(to bottom, #c9a87c, rgba(160, 113, 79, 0.2));
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(201, 168, 124, 0.2), #c9a87c 15%, #c9a87c 85%, rgba(201, 168, 124, 0.2));
   transform: translateX(-50%);
 }
 
 .tl-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 36px;
   position: relative;
+  width: 50%;
+  padding: 12px 44px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
 }
 
 .tl-item.tl-left {
-  flex-direction: row-reverse;
+  left: 0;
   text-align: right;
 }
 
 .tl-item.tl-right {
-  flex-direction: row;
+  left: 50%;
   text-align: left;
 }
 
+.tl-dot {
+  position: absolute;
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #c9a87c;
+  border: 3px solid #f5ede0;
+  box-shadow: 0 0 0 3px rgba(201, 168, 124, 0.3);
+  z-index: 2;
+}
+
+.tl-item.tl-left .tl-dot {
+  right: -8px;
+}
+
+.tl-item.tl-right .tl-dot {
+  left: -8px;
+}
+
 .tl-card {
-  width: calc(50% - 30px);
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
   background: #fff8f0;
   border: 1px solid #e8d5bc;
   border-radius: 18px;
@@ -805,28 +829,20 @@ body {
 }
 
 .tl-desc {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: #4a3728;
   font-weight: 500;
   line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.tl-dot {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #c9a87c;
-  border: 3px solid #f5ede0;
-  z-index: 2;
-  flex-shrink: 0;
-}
-
-.tl-spacer {
-  width: calc(50% - 30px);
+.tl-desc i {
+  color: #a0714f;
+  font-size: 0.9rem;
+  width: 18px;
+  text-align: center;
 }
 
 .venus-wrap {
@@ -866,12 +882,30 @@ body {
   font-style: italic;
 }
 
+@media (max-width: 768px) {
+  .tl-center-line {
+    left: 18px;
+  }
+  .tl-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 48px;
+    padding-right: 8px;
+  }
+  .tl-item.tl-left .tl-dot,
+  .tl-item.tl-right .tl-dot {
+    left: 10px;
+    right: auto;
+  }
+  .tl-card {
+    display: block;
+  }
+}
+
 @media (max-width: 576px) {
   .london-hero-bg {
     padding: 60px 20px 40px;
-  }
-  .tl-card {
-    padding: 12px 14px;
   }
   .venus-card {
     padding: 18px 24px;
