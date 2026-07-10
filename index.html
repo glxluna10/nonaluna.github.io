@@ -30,15 +30,22 @@
         </button>
 
         <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#novel">Novel</a></li>
-            <li class="nav-item"><a class="nav-link" href="#cerpen">Cerpen</a></li>
-            <li class="nav-item"><a class="nav-link" href="#prestasi">Prestasi</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#london">Dreams</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav_home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#novel" data-i18n="nav_novel">Novel</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cerpen" data-i18n="nav_cerpen">Cerpen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#prestasi" data-i18n="nav_prestasi">Prestasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#london" data-i18n="nav_dreams">Dreams</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <button id="langToggle" class="lang-switch" type="button" aria-label="Switch language">
+                <span class="lang-option" data-lang-option="id">ID</span>
+                <span class="lang-option" data-lang-option="en">EN</span>
+                <span class="lang-thumb"></span>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -57,13 +64,13 @@
 
       <div class="hero-inner container">
         <div class="hero-text" data-aos="fade-right">
-          <p class="hero-hello">— hello, i'm</p>
+          <p class="hero-hello" data-i18n="hero_hello">— hello, i'm</p>
           <h1 class="hero-name">Gaida<br /><span>Tsabita A.</span></h1>
-          <div class="hero-typing-wrap"><span class="hero-typing-label">a </span><span id="typing"></span></div>
-          <p class="hero-sub">Penulis & RPL Student dari Medan yang hidup di antara kode dan cerita ✨</p>
+          <div class="hero-typing-wrap"><span class="hero-typing-label" data-i18n="hero_typing_label">a </span><span id="typing"></span></div>
+          <p class="hero-sub" data-i18n="hero_sub">Penulis & RPL Student dari Medan yang hidup di antara kode dan cerita ✨</p>
           <div class="hero-cta-group">
-            <a href="#novel" class="btn-hero-primary">Lihat Karya</a>
-            <a href="#contact" class="btn-hero-ghost">Say Hi 👋</a>
+            <a href="#novel" class="btn-hero-primary" data-i18n="hero_btn_primary">Lihat Karya</a>
+            <a href="#contact" class="btn-hero-ghost" data-i18n="hero_btn_ghost">Say Hi 👋</a>
           </div>
         </div>
 
@@ -73,14 +80,14 @@
               <img src="img/aluna2.jpg" class="profile-img" alt="Gaida Tsabita" />
             </div>
           </div>
-          <div class="hero-badge hero-badge-writer">✍️ Writer</div>
-          <div class="hero-badge hero-badge-coder">💻 Coder</div>
-          <div class="hero-badge hero-badge-dreamer">🌙 Dreamer</div>
+          <div class="hero-badge hero-badge-writer" data-i18n="hero_badge_writer">✍️ Writer</div>
+          <div class="hero-badge hero-badge-coder" data-i18n="hero_badge_coder">💻 Coder</div>
+          <div class="hero-badge hero-badge-dreamer" data-i18n="hero_badge_dreamer">🌙 Dreamer</div>
         </div>
       </div>
 
       <div class="hero-scroll">
-        <span>scroll</span>
+        <span data-i18n="hero_scroll">scroll</span>
         <div class="hero-scroll-line"></div>
       </div>
     </section>
@@ -88,8 +95,8 @@
     <!-- ABOUT -->
     <section id="about" data-aos="fade-up">
       <div class="container text-center">
-        <h2>About Me</h2>
-        <p>
+        <h2 data-i18n="about_title">About Me</h2>
+        <p data-i18n="about_text">
           Gaida Tsabita Ahmad, yang dikenal dengan nama pena Saviara Aluna atau Nonaluna, adalah siswi jurusan RPL di SMK Swasta Mandiri yang telah menekuni dunia komputer dan menulis sejak kelas 2 SD. Selain identitas tersebut, ia juga
           memiliki banyak panggilan unik sehingga banyak dari orang-orang terdekatnya sedikit kebingungan dengan nama panggilan aslinya. Disisi lain, ia juga mencerminkan kepribadiannya yang dinamis di berbagai lingkaran pertemanan sehingga
           tak sedikit orang yang merasa senang dengan kehadirannya. Di tengah kesibukannya menyusun kode dan menulis novel di Wattpad, Gaida terus mengasah "otak fantasi"-nya untuk mewujudkan visi Venus Aegis, sebuah proyek masa depan yang
@@ -101,7 +108,7 @@
     <!-- NOVEL -->
     <section id="novel" data-aos="fade-up">
       <div class="container text-center">
-        <h2>My Novels</h2>
+        <h2 data-i18n="novel_title">My Novels</h2>
 
         <div class="row mt-4 justify-content-center g-4">
           <!-- Novel 1 -->
@@ -110,12 +117,12 @@
               <img src="img/novel/novel1.png" class="card-img-top" />
               <div class="card-body">
                 <h5>Petel Heart [END]</h5>
-                <p>
+                <p data-i18n="novel1_text">
                   Bagi Arelia, SMK Drigaham hanyalah tempat untuk bertahan dan bersembunyi dari trauma masa lalu. Namun, ketika bayang-bayang masa kecil dan sosok misterius mulai mengintip dari balik kegelapan, topeng ketenangannya hancur.
                   Di antara perlindungan Kaelan dan tatapan penuh arti Pak Raka, Arelia harus sadar: di sekolah ini, kehangatan selalu berjalan beriringan dengan bahaya.
                 </p>
 
-                <a href="https://www.wattpad.com/story/405984261-petel-heart-end" target="_blank" class="btn btn-main"> Read Now </a>
+                <a href="https://www.wattpad.com/story/405984261-petel-heart-end" target="_blank" class="btn btn-main" data-i18n="btn_read_now"> Read Now </a>
               </div>
             </div>
           </div>
@@ -126,13 +133,13 @@
               <img src="img/novel/novel2.png" class="card-img-top" />
               <div class="card-body">
                 <h5>Strands of Propechy [On Going]</h5>
-                <p>
+                <p data-i18n="novel2_text">
                   Tidak ada yang benar-benar tahu apa yang akan terjadi dengan dunia ini, baik di masa lalu, maupun di masa sekarang. ​Namun, jika kau terlempar ke sebuah zaman di mana setiap jengkal tanah dikuasai oleh pedang dan sihir,
                   pilihan apa yang akan kau ambil saat takdir menyudutkanmu pada dua kondisi paling kejam: Cinta atau Takhta? ​Di bawah langit Académie de Clairmont yang menyimpan pendaran kuno, rahasia mulai terkuak. Ketika lembaran
                   kehidupanmu sebenarnya telah ditulis oleh takdir yang dikutuk, apakah kau akan memilih membantah dan menghancurkan dunia, atau patuh mengikuti alurnya hingga hancur bersama ingatan yang hilang?
                 </p>
 
-                <a href="https://www.wattpad.com/story/402799503-strands-of-prophecy-new" target="_blank" class="btn btn-main"> Read Now </a>
+                <a href="https://www.wattpad.com/story/402799503-strands-of-prophecy-new" target="_blank" class="btn btn-main" data-i18n="btn_read_now"> Read Now </a>
               </div>
             </div>
           </div>
@@ -143,12 +150,12 @@
               <img src="img/novel/novel3.png" class="card-img-top" />
               <div class="card-body">
                 <h5>Syntax Error: Memory Corrupted [HIATUS]</h5>
-                <p>
+                <p data-i18n="novel3_text">
                   Logika pemrograman Alahya Habiba mendadak mengalami 'fatal error' saat takdir menyeretnya ke dalam teka-teki kematian Zelynne Elvan. Di antara kepingan memori Eline yang terhapus dan konspirasi gelap yang mengintai di
                   balik layar, Alahya sadar bahwa seseorang telah meretas kebenaran. Ketika sistem mulai mendeteksi bahaya, mundur bukanlah lagi sebuah opsi.
                 </p>
 
-                <a href="https://www.wattpad.com/story/411327468-syntax-error-memory-corrupted" target="_blank" class="btn btn-main"> Read Now </a>
+                <a href="https://www.wattpad.com/story/411327468-syntax-error-memory-corrupted" target="_blank" class="btn btn-main" data-i18n="btn_read_now"> Read Now </a>
               </div>
             </div>
           </div>
@@ -159,7 +166,7 @@
     <!-- CERPEN -->
     <section id="cerpen" data-aos="fade-up">
       <div class="container text-center">
-        <h2>My Cerpen</h2>
+        <h2 data-i18n="cerpen_title">My Cerpen</h2>
 
         <div class="row justify-content-center mt-4">
           <div class="col-lg-5 col-md-6">
@@ -169,12 +176,12 @@
               <div class="card-body">
                 <h5>Aku Baik-Baik Saja, Kataku</h5>
 
-                <p>
+                <p data-i18n="cerpen1_text">
                   Sejak Vino direnggut oleh takdir, kebahagiaan Alea ikut terkunci di masa lalu. Kini, ia harus bertahan di dalam rumah yang dingin, pelukan ibu yang salah alamat, dan petaka senyap dari senyuman manipulatif adiknya, Zean.
                   Di kala dunia runtuh tanpa suara dan kegelapan kian mencekik, akankah Alea mampu bertahan? Ataukah ia akan ikut padam bersama topeng 'baik-baik saja' yang selama ini ia pakai?
                 </p>
 
-                <a href="https://www.wattpad.com/story/408207046-aku-baik-baik-saja-kataku" target="_blank" class="btn btn-main"> Read Story </a>
+                <a href="https://www.wattpad.com/story/408207046-aku-baik-baik-saja-kataku" target="_blank" class="btn btn-main" data-i18n="btn_read_story"> Read Story </a>
               </div>
             </div>
           </div>
@@ -185,7 +192,7 @@
     <!-- PRESTASI -->
     <section id="prestasi" data-aos="fade-up">
       <div class="container text-center">
-        <h2>Prestasi</h2>
+        <h2 data-i18n="prestasi_title">Prestasi</h2>
 
         <div class="row mt-4 justify-content-center g-4">
           <!-- isi sertifikat -->
@@ -194,7 +201,7 @@
             <div class="card">
               <img src="img/sertificate/foto1.png" />
               <div class="card-body">
-                <p>
+                <p data-i18n="prestasi1_text">
                   Gaida mendapatkan Sertifikat Juara Nasional dari Penerbit Antero sebagai bentuk apresiasi atas karya tulisnya yang berjudul "Kisah Cintaku". Sertifikat ini merupakan simbol penghargaan bagi seluruh penulis yang telah
                   berpartisipasi dalam menghidupkan literasi nasional melalui karya kreatif mereka.
                 </p>
@@ -207,7 +214,7 @@
             <div class="card">
               <img src="img/sertificate/foto2.png" />
               <div class="card-body">
-                <p>
+                <p data-i18n="prestasi2_text">
                   Gaida secara resmi dinyatakan sebagai Penulis Buku Nasional dengan hasil penilaian "Sangat Baik" oleh tim redaksi. Piagam ini menandakan bahwa karya Gaida dinilai profesional dan layak untuk diterbitkan secara luas oleh
                   Penerbit Nasional Antero Literasi Indonesia.
                 </p>
@@ -220,7 +227,7 @@
             <div class="card">
               <img src="img/sertificate/foto3.png" />
               <div class="card-body">
-                <p>
+                <p data-i18n="prestasi3_text">
                   Gaida terpilih sebagai peserta yang lolos dalam Pentas Cerita Nasional Ke-5 pada Festival Penulis 2026. Penghargaan ini diterima atas karya cerpen berjudul "Aku Baik-Baik Saja, Kataku" yang diakui sebagai karya yang
                   inovatif dan menginspirasi.
                 </p>
@@ -233,7 +240,7 @@
             <div class="card">
               <img src="img/sertificate/foto4.png" />
               <div class="card-body">
-                <p>
+                <p data-i18n="prestasi4_text">
                   Gaida mendapatkan Sertifikat Penghargaan dari Program Muslimah Belajar Ai (MBA) atas partisipasinya dalam Kelas Desain Ai pada 14 April 2025. Sertifikat ini menjadi simbol apresiasi bagi peserta yang siap berinovasi dan
                   menguasai teknologi kreatif digital.
                 </p>
@@ -246,7 +253,7 @@
             <div class="card">
               <img src="img/sertificate/foto5.png" />
               <div class="card-body">
-                <p>
+                <p data-i18n="prestasi5_text">
                   Gaida mendapatkan Sertifikat Penghargaan atas partisipasinya dalam Kelas Gambar Animasi Anak (22–23 Maret 2025) oleh MDC X Pena Pengusaha Muslimah. Sertifikat ini merupakan apresiasi atas dedikasinya dalam mengembangkan
                   kreativitas dan karya animasi.
                 </p>
@@ -260,7 +267,7 @@
     <!-- PROJECT -->
     <section id="projects" data-aos="fade-up">
       <div class="container text-center">
-        <h2 data-aos="fade-up">Projects</h2>
+        <h2 data-aos="fade-up" data-i18n="projects_title">Projects</h2>
 
         <div class="row mt-4 justify-content-center g-4">
           <!-- 1 -->
@@ -268,15 +275,15 @@
             <div class="card">
               <img src="img/projects/foto1.png" />
               <div class="card-body">
-                <p>
+                <p data-i18n="project1_text">
                   Gaida sedang merintis proyek pemrograman website dengan fitur video background estetik bernuansa dreamy. Meskipun masih dalam tahap awal pengembangan, tampilan antarmuka yang cantik ini menjadi langkah awal Gaida dalam
                   mendalami dunia coding dan desain CSS.
                 </p>
-                <small class="project-note"> Only available on PC / Laptop </small>
+                <small class="project-note" data-i18n="project_note"> Only available on PC / Laptop </small>
 
                 <br /><br />
 
-                <a href="https://glxluna10.github.io/webvideobackground.github.io/" target="_blank" class="btn btn-project"> See Project </a>
+                <a href="https://glxluna10.github.io/webvideobackground.github.io/" target="_blank" class="btn btn-project" data-i18n="btn_see_project"> See Project </a>
               </div>
             </div>
           </div>
@@ -286,15 +293,15 @@
             <div class="card">
               <img src="img/projects/foto2.jpeg" />
               <div class="card-body">
-                <p>
+                <p data-i18n="project2_text">
                   Gaida sedang merintis proyek pemrograman pertamanya berupa aplikasi buku harian digital yang bernama "My Secret Diary". Meskipun saat ini masih dalam tahap awal dan memerlukan banyak peningkatan, tampilan antarmuka ini
                   menjadi langkah awal Gaida dalam belajar coding.
                 </p>
-                <small class="project-note"> Only available on PC / Laptop </small>
+                <small class="project-note" data-i18n="project_note"> Only available on PC / Laptop </small>
 
                 <br /><br />
 
-                <a href="https://glxluna10.github.io/secret_diary/" target="_blank" class="btn btn-project"> See Project </a>
+                <a href="https://glxluna10.github.io/secret_diary/" target="_blank" class="btn btn-project" data-i18n="btn_see_project"> See Project </a>
               </div>
             </div>
           </div>
@@ -305,8 +312,8 @@
               <img src="img/projects/foto3.png" />
               <div class="card-body">
                 <br />
-                <small class="project-note"> Future Development Project </small>
-                <p>
+                <small class="project-note" data-i18n="project_future_note"> Future Development Project </small>
+                <p data-i18n="project3_text">
                   Gaida memiliki rencana besar untuk mengembangkan kemampuan pemrogramannya hingga bisa membuat sistem keamanan cerdas yang kompleks seperti konsep "Venus Aegis". Ini adalah target jangka panjang Gaida untuk membangun sistem
                   yang lebih canggih, adaptif, dan memiliki visual futuristik yang terinspirasi dari imajinasinya.
                 </p>
@@ -358,19 +365,19 @@
             <circle cx="628" cy="20" r="18" fill="#1a1108" />
           </svg>
         </div>
-        <p class="london-quote" data-aos="fade-up">"Someday, London."</p>
-        <p class="london-sub">a dream worth chasing ✦</p>
+        <p class="london-quote" data-aos="fade-up" data-i18n="london_quote">"Someday, London."</p>
+        <p class="london-sub" data-i18n="london_sub">a dream worth chasing ✦</p>
       </div>
 
       <div class="timeline-bg">
-        <p class="timeline-eyebrow">my journey</p>
+        <p class="timeline-eyebrow" data-i18n="timeline_eyebrow">my journey</p>
         <div class="tl-wrap">
           <div class="tl-center-line"></div>
 
           <div class="tl-item tl-left">
             <div class="tl-card">
               <div class="tl-year">2017</div>
-              <div class="tl-desc">Mulai menulis ✍️</div>
+              <div class="tl-desc" data-i18n="tl1_desc">Mulai menulis ✍️</div>
             </div>
 
             <div class="tl-dot"></div>
@@ -385,14 +392,14 @@
 
             <div class="tl-card">
               <div class="tl-year">2024</div>
-              <div class="tl-desc">Belajar coding 💻</div>
+              <div class="tl-desc" data-i18n="tl2_desc">Belajar coding 💻</div>
             </div>
           </div>
 
           <div class="tl-item tl-left">
             <div class="tl-card">
               <div class="tl-year">2025</div>
-              <div class="tl-desc">Penulis Nasional 📖</div>
+              <div class="tl-desc" data-i18n="tl3_desc">Penulis Nasional 📖</div>
             </div>
 
             <div class="tl-dot"></div>
@@ -407,16 +414,16 @@
 
             <div class="tl-card">
               <div class="tl-year">2026</div>
-              <div class="tl-desc">Improve My British Accent 🇬🇧</div>
+              <div class="tl-desc" data-i18n="tl4_desc">Improve My British Accent 🇬🇧</div>
             </div>
           </div>
         </div>
 
         <div class="venus-wrap" data-aos="fade-up">
           <div class="venus-card">
-            <div class="venus-eyebrow">future</div>
+            <div class="venus-eyebrow" data-i18n="venus_eyebrow">future</div>
             <div class="venus-title">Venus Aegis</div>
-            <div class="venus-note">the dream is loading... ✨</div>
+            <div class="venus-note" data-i18n="venus_note">the dream is loading... ✨</div>
           </div>
         </div>
       </div>
@@ -425,8 +432,8 @@
     <!-- CONTACT -->
     <section id="contact" data-aos="fade-up">
       <div class="container text-center">
-        <h2>Contact Me</h2>
-        <p class="mb-4 text-muted">Let's connect through my social media!</p>
+        <h2 data-i18n="contact_title">Contact Me</h2>
+        <p class="mb-4 text-muted" data-i18n="contact_sub">Let's connect through my social media!</p>
 
         <!-- Social Media Buttons Container -->
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 social-container" data-aos="fade-up" data-aos-delay="150">
@@ -442,7 +449,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>Made with ♡ by Aluna</p>
+      <p data-i18n="footer_text">Made with ♡ by Aluna</p>
     </footer>
 
     <!-- JS -->
@@ -458,12 +465,202 @@
         easing: 'ease-in-out',
       });
 
-      new Typed('#typing', {
-        strings: ['Writer', 'Dreamer', 'RPL Student'],
-        typeSpeed: 60,
-        backSpeed: 40,
-        loop: true,
+      // ================== I18N ==================
+      const translations = {
+        id: {
+          nav_home: 'Home',
+          nav_about: 'About Me',
+          nav_novel: 'Novel',
+          nav_cerpen: 'Cerpen',
+          nav_prestasi: 'Prestasi',
+          nav_projects: 'Proyek',
+          nav_dreams: 'Mimpi',
+          nav_contact: 'Kontak',
+
+          hero_hello: '— hai, aku',
+          hero_typing_label: 'seorang ',
+          hero_sub: 'Penulis & RPL Student dari Medan yang hidup di antara kode dan cerita ✨',
+          hero_btn_primary: 'Lihat Karya',
+          hero_btn_ghost: 'Say Hi 👋',
+          hero_badge_writer: '✍️ Penulis',
+          hero_badge_coder: '💻 Coder',
+          hero_badge_dreamer: '🌙 Pemimpi',
+          hero_scroll: 'scroll',
+
+          about_title: 'Tentang Aku',
+          about_text:
+            'Gaida Tsabita Ahmad, yang dikenal dengan nama pena Saviara Aluna atau Nonaluna, adalah siswi jurusan RPL di SMK Swasta Mandiri yang telah menekuni dunia komputer dan menulis sejak kelas 2 SD. Selain identitas tersebut, ia juga memiliki banyak panggilan unik sehingga banyak dari orang-orang terdekatnya sedikit kebingungan dengan nama panggilan aslinya. Disisi lain, ia juga mencerminkan kepribadiannya yang dinamis di berbagai lingkaran pertemanan sehingga tak sedikit orang yang merasa senang dengan kehadirannya. Di tengah kesibukannya menyusun kode dan menulis novel di Wattpad, Gaida terus mengasah "otak fantasi"-nya untuk mewujudkan visi Venus Aegis, sebuah proyek masa depan yang memadukan logika pemrograman dengan imajinasi kreatif tanpa batas.',
+
+          novel_title: 'Novel-Novelku',
+          novel1_text:
+            'Bagi Arelia, SMK Drigaham hanyalah tempat untuk bertahan dan bersembunyi dari trauma masa lalu. Namun, ketika bayang-bayang masa kecil dan sosok misterius mulai mengintip dari balik kegelapan, topeng ketenangannya hancur. Di antara perlindungan Kaelan dan tatapan penuh arti Pak Raka, Arelia harus sadar: di sekolah ini, kehangatan selalu berjalan beriringan dengan bahaya.',
+          novel2_text:
+            'Bagi banyak orang, Académie de Clairmont adalah tempat para bangsawan dan penyihir muda ditempa menjadi penerus kerajaan. Namun, ketika sebuah rahasia terkutuk mulai terungkap, setiap pilihan berubah menjadi pertaruhan. Di dunia yang dikuasai pedang, sihir, dan ambisi, hanya ada satu pertanyaan yang benar-benar penting: Cinta atau Takhta? Sebab, satu keputusan mampu mengubah takdir seluruh kerajaan.',
+          novel3_text:
+            "Logika pemrograman Alahya Habiba mendadak mengalami 'fatal error' saat takdir menyeretnya ke dalam teka-teki kematian Zelynne Elvan. Di antara kepingan memori Eline yang terhapus dan konspirasi gelap yang mengintai di balik layar, Alahya sadar bahwa seseorang telah meretas kebenaran. Ketika sistem mulai mendeteksi bahaya, mundur bukanlah lagi sebuah opsi.",
+          btn_read_now: 'Baca Sekarang',
+
+          cerpen_title: 'Cerpenku',
+          cerpen1_text:
+            "Sejak Vino direnggut oleh takdir, kebahagiaan Alea ikut terkunci di masa lalu. Kini, ia harus bertahan di dalam rumah yang dingin, pelukan ibu yang salah alamat, dan petaka senyap dari senyuman manipulatif adiknya, Zean. Di kala dunia runtuh tanpa suara dan kegelapan kian mencekik, akankah Alea mampu bertahan? Ataukah ia akan ikut padam bersama topeng 'baik-baik saja' yang selama ini ia pakai?",
+          btn_read_story: 'Baca Cerita',
+
+          prestasi_title: 'Prestasi',
+          prestasi1_text:
+            'Gaida mendapatkan Sertifikat Juara Nasional dari Penerbit Antero sebagai bentuk apresiasi atas karya tulisnya yang berjudul "Kisah Cintaku". Sertifikat ini merupakan simbol penghargaan bagi seluruh penulis yang telah berpartisipasi dalam menghidupkan literasi nasional melalui karya kreatif mereka.',
+          prestasi2_text:
+            'Gaida secara resmi dinyatakan sebagai Penulis Buku Nasional dengan hasil penilaian "Sangat Baik" oleh tim redaksi. Piagam ini menandakan bahwa karya Gaida dinilai profesional dan layak untuk diterbitkan secara luas oleh Penerbit Nasional Antero Literasi Indonesia.',
+          prestasi3_text:
+            'Gaida terpilih sebagai peserta yang lolos dalam Pentas Cerita Nasional Ke-5 pada Festival Penulis 2026. Penghargaan ini diterima atas karya cerpen berjudul "Aku Baik-Baik Saja, Kataku" yang diakui sebagai karya yang inovatif dan menginspirasi.',
+          prestasi4_text:
+            'Gaida mendapatkan Sertifikat Penghargaan dari Program Muslimah Belajar Ai (MBA) atas partisipasinya dalam Kelas Desain Ai pada 14 April 2025. Sertifikat ini menjadi simbol apresiasi bagi peserta yang siap berinovasi dan menguasai teknologi kreatif digital.',
+          prestasi5_text:
+            'Gaida mendapatkan Sertifikat Penghargaan atas partisipasinya dalam Kelas Gambar Animasi Anak (22–23 Maret 2025) oleh MDC X Pena Pengusaha Muslimah. Sertifikat ini merupakan apresiasi atas dedikasinya dalam mengembangkan kreativitas dan karya animasi.',
+
+          projects_title: 'Proyek',
+          project1_text:
+            'Gaida sedang merintis proyek pemrograman website dengan fitur video background estetik bernuansa dreamy. Meskipun masih dalam tahap awal pengembangan, tampilan antarmuka yang cantik ini menjadi langkah awal Gaida dalam mendalami dunia coding dan desain CSS.',
+          project2_text:
+            'Gaida sedang merintis proyek pemrograman pertamanya berupa aplikasi buku harian digital yang bernama "My Secret Diary". Meskipun saat ini masih dalam tahap awal dan memerlukan banyak peningkatan, tampilan antarmuka ini menjadi langkah awal Gaida dalam belajar coding.',
+          project3_text:
+            'Gaida memiliki rencana besar untuk mengembangkan kemampuan pemrogramannya hingga bisa membuat sistem keamanan cerdas yang kompleks seperti konsep "Venus Aegis". Ini adalah target jangka panjang Gaida untuk membangun sistem yang lebih canggih, adaptif, dan memiliki visual futuristik yang terinspirasi dari imajinasinya.',
+          project_note: 'Hanya tersedia di PC / Laptop',
+          project_future_note: 'Proyek Pengembangan Masa Depan',
+          btn_see_project: 'Lihat Proyek',
+
+          london_quote: '"Someday, London."',
+          london_sub: 'sebuah mimpi yang layak dikejar ✦',
+          timeline_eyebrow: 'perjalananku',
+          tl1_desc: 'Mulai menulis ✍️',
+          tl2_desc: 'Belajar coding 💻',
+          tl3_desc: 'Penulis Nasional 📖',
+          tl4_desc: 'Memperbaiki Aksen British-ku 🇬🇧',
+          venus_eyebrow: 'masa depan',
+          venus_note: 'mimpi sedang dimuat... ✨',
+
+          contact_title: 'Hubungi Aku',
+          contact_sub: 'Yuk terhubung lewat media sosialku!',
+
+          footer_text: 'Made with ♡ by Aluna',
+
+          typed_strings: ['Penulis', 'Pemimpi', 'Siswi RPL'],
+        },
+        en: {
+          nav_home: 'Home',
+          nav_about: 'About Me',
+          nav_novel: 'Novel',
+          nav_cerpen: 'Short Stories',
+          nav_prestasi: 'Achievements',
+          nav_projects: 'Projects',
+          nav_dreams: 'Dreams',
+          nav_contact: 'Contact',
+
+          hero_hello: "— hello, i'm",
+          hero_typing_label: 'a ',
+          hero_sub: 'Writer & Software Engineering student from Medan who lives between code and stories ✨',
+          hero_btn_primary: 'View My Work',
+          hero_btn_ghost: 'Say Hi 👋',
+          hero_badge_writer: '✍️ Writer',
+          hero_badge_coder: '💻 Coder',
+          hero_badge_dreamer: '🌙 Dreamer',
+          hero_scroll: 'scroll',
+
+          about_title: 'About Me',
+          about_text:
+            'Gaida Tsabita Ahmad, known by her pen names Saviara Aluna and Nonaluna, is a Software Engineering student at SMK Swasta Mandiri who has been immersed in computers and writing since Year 2 of primary school. Beyond these names, she also goes by a number of unique nicknames, which often leaves those closest to her a little confused about what to actually call her. She reflects a dynamic personality across different circles of friends, and plenty of people find themselves brightened by her presence. Amid the busyness of writing code and novels on Wattpad, Gaida keeps sharpening her "fantasy brain" to bring her vision of Venus Aegis to life — a future project that blends programming logic with boundless creative imagination.',
+
+          novel_title: 'My Novels',
+          novel1_text:
+            "For Arelia, SMK Drigaham is nothing more than a place to survive and hide from past trauma. But when shadows from her childhood and a mysterious figure begin creeping out of the darkness, her mask of calm shatters. Caught between Kaelan's protection and Mr Raka's meaningful glances, Arelia must come to terms with the truth: in this school, warmth always walks hand in hand with danger.",
+          novel2_text:
+            'No one knows the mysteries of the past, nor what the future holds. But when fate casts you into a world of swords and sorcery, only one question remains: **Love or the Throne?** At **Académie de Clairmont**, a cursed secret begins to unravel, forcing every soul to choose between defying destiny and condemning the world, or surrendering to it and fading into nothing but forgotten ashes.',
+          novel3_text:
+            "Alahya Habiba's programming logic suddenly throws a 'fatal error' as fate drags her into the mystery of Zelynne Elvan's death. Amid the deleted fragments of Eline's memory and a dark conspiracy lurking behind the scenes, Alahya realises that someone has hacked the truth itself. Once the system starts detecting danger, turning back is no longer an option.",
+          btn_read_now: 'Read Now',
+
+          cerpen_title: 'My Short Stories',
+          cerpen1_text:
+            "Ever since fate took Vino away, Alea's happiness became locked in the past along with him. Now she must survive within a cold house, a mother's misdirected embrace, and the silent catastrophe behind her younger brother Zean's manipulative smile. As her world crumbles without a sound and the darkness closes in, will Alea manage to hold on? Or will she fade away along with the 'I'm fine' mask she's worn all this time?",
+          btn_read_story: 'Read Story',
+
+          prestasi_title: 'Achievements',
+          prestasi1_text:
+            'Gaida received a National Champion Certificate from Antero Publishing in recognition of her written work, "Kisah Cintaku". This certificate stands as a token of appreciation for all the writers who took part in bringing national literacy to life through their creative work.',
+          prestasi2_text:
+            'Gaida was officially recognised as a National Book Author, having been rated "Very Good" by the editorial team. This certificate confirms that her work was judged professional and worthy of wide publication by Antero Literasi Indonesia, a national publisher.',
+          prestasi3_text:
+            'Gaida was selected as a qualifying participant in the 5th National Story Stage at the 2026 Writers\' Festival. This award was given for her short story "Aku Baik-Baik Saja, Kataku", which was recognised as an innovative and inspiring piece of work.',
+          prestasi4_text:
+            'Gaida received a Certificate of Appreciation from the Muslimah Belajar AI (MBA) programme for taking part in the AI Design Class on 14 April 2025. This certificate stands as recognition for participants ready to innovate and master creative digital technology.',
+          prestasi5_text:
+            "Gaida received a Certificate of Appreciation for taking part in the Children's Animation Drawing Class (22–23 March 2025), held by MDC X Pena Pengusaha Muslimah. This certificate recognises her dedication to developing her creativity and animation work.",
+
+          projects_title: 'Projects',
+          project1_text:
+            "Gaida is building a web programming project featuring an aesthetic, dreamy video background. Although still in the early stages of development, this pretty interface marks Gaida's first step into learning coding and CSS design in greater depth.",
+          project2_text:
+            'Gaida is working on her very first programming project: a digital diary app called "My Secret Diary". Although it\'s still in its early stages and needs plenty of improvement, this interface marks Gaida\'s first step in learning to code.',
+          project3_text:
+            'Gaida has big plans to develop her programming skills to the point of building a complex, intelligent security system based on the "Venus Aegis" concept. This is her long-term goal: to build a system that\'s more sophisticated, adaptive, and visually futuristic, inspired by her own imagination.',
+          project_note: 'Only available on PC / Laptop',
+          project_future_note: 'Future Development Project',
+          btn_see_project: 'See Project',
+
+          london_quote: '"Someday, London."',
+          london_sub: 'a dream worth chasing ✦',
+          timeline_eyebrow: 'my journey',
+          tl1_desc: 'Started writing ✍️',
+          tl2_desc: 'Learnt to code 💻',
+          tl3_desc: 'National Author 📖',
+          tl4_desc: 'Improve My British Accent 🇬🇧',
+          venus_eyebrow: 'future',
+          venus_note: 'the dream is loading... ✨',
+
+          contact_title: 'Contact Me',
+          contact_sub: "Let's connect through my social media!",
+
+          footer_text: 'Made with ♡ by Aluna',
+
+          typed_strings: ['Writer', 'Dreamer', 'Software Engineering Student'],
+        },
+      };
+
+      let currentLang = localStorage.getItem('site-lang') || 'id';
+      let typedInstance = null;
+
+      function startTyped(lang) {
+        if (typedInstance) typedInstance.destroy();
+        typedInstance = new Typed('#typing', {
+          strings: translations[lang].typed_strings,
+          typeSpeed: 60,
+          backSpeed: 40,
+          loop: true,
+        });
+      }
+
+      function applyLanguage(lang) {
+        const dict = translations[lang];
+        document.querySelectorAll('[data-i18n]').forEach((el) => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) el.textContent = dict[key];
+        });
+        document.documentElement.setAttribute('lang', lang === 'id' ? 'id' : 'en-GB');
+        document.querySelectorAll('.lang-option').forEach((el) => {
+          el.classList.toggle('active', el.getAttribute('data-lang-option') === lang);
+        });
+        const switchBtn = document.getElementById('langToggle');
+        if (switchBtn) switchBtn.classList.toggle('is-en', lang === 'en');
+        currentLang = lang;
+        localStorage.setItem('site-lang', lang);
+        startTyped(lang);
+      }
+
+      document.getElementById('langToggle').addEventListener('click', () => {
+        applyLanguage(currentLang === 'id' ? 'en' : 'id');
       });
+
+      applyLanguage(currentLang);
+      // ================== END I18N ==================
 
       // London stars
       const canvas = document.getElementById('londonStars');
