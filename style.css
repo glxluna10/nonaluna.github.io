@@ -494,6 +494,9 @@ body {
   border-radius: 20px;
   overflow: hidden;
   transition: 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .novel-card:hover {
@@ -507,6 +510,18 @@ body {
 
 .novel-card .card-body {
   color: #f5ede0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.novel-card .card-body p {
+  flex: 1;
+}
+
+.novel-card .card-body .btn-main {
+  align-self: center;
+  margin-top: auto;
 }
 
 .novel-card h5 {
